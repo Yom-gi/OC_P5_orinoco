@@ -10,7 +10,7 @@ body {
   
   h1 {
     font-family: "Merienda", sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: #261624;
     text-align: center;
@@ -24,7 +24,7 @@ body {
   
   h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
     color: #261624;
     text-align: center;
@@ -43,7 +43,7 @@ body {
   }
   
   header {
-    background-color: #F3E9F1;
+    background-color: #8ad5e6;
     width: 100%;
     position: fixed;
     display: flex;
