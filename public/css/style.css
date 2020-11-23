@@ -22,15 +22,15 @@ main{
   background-image: url(images/tedd.png);
   width: 100%;
 }
+
 header p{
   font-size: 1.5em;
   text-align: center;
 }
+
 #logo{
   margin-left: 1%;
   margin-top: 1%;
-}
-
 }
 
 .panier{
