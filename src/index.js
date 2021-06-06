@@ -75,4 +75,3 @@ teddies().then((data) => {
     counter += 1;
   });
 });
-

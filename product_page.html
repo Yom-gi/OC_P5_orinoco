@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Site internet ORINOCO, ventes en ligne d'oursons en peluches, meubles en bois & appareils photos d'époques.">
+        <link rel="stylesheet" href="public/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="public/css/style.css">
+        <script src="src/product.js"></script>
+        <script src="https://kit.fontawesome.com/180cce73de.js" crossorigin="anonymous"></script>
+		<title>ORITEDDIES - Vente en ligne d'ours en peluche</title>
+	</head>
+	<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html"><img src="images/basket.png" id="logo" alt="logo" class="basket_logo"></a>
+            <a class="navbar-brand" href="index.html">ORITEDDIES</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">              Portfolio            </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">              Blog            </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">              Other Pages            </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
+                            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                            <a class="dropdown-item" href="404.html">404</a>
+                            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="basket_button">
+            <button class="panier" onclick='location.href="panier.html"' data-target="panier">
+                Panier ( 
+                <span class="totalQté"></span>
+                    )
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+      <!-- Page Content -->
+    <main>
+        <div class="container">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3">Détails produit
+                <small></small>
+            </h1>
+        
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Détails produit</li>
+            </ol>
+
+                <!-- Intro Content -->
+            <div class="row column-flex-center">
+                <div class="col-lg-12">
+                    <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                    <h2>About Modern Business</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                <i class="fas fa-lock"> Paiement Sécurisé </i>
+                <i class="fas fa-truck"> Livraison 72h </i>
+                <i class="fas fa-reply"> Retours gratuits </i>
+            </p>
+            <p class="m-0 text-center text-white">
+                            Je rejoins la communauté ORINOCO        
+            </p>
+            <p class="m-0 text-center text-white">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google-plus"></i>
+            </p>
+        </div>
+    </footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
