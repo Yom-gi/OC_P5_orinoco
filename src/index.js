@@ -24,27 +24,37 @@ var teddies = function () {
     return ajaxRequest(urlOrinoco)
 };
 
-const teddybear = document.getElementsByClassName('card-body');
+const teddybear = document.getElementsByClassName('row');
 console.log(teddybear);
+
 
 teddies().then((data) => {
   console.log(data);
-  
+
   let counter = 0;
   data.forEach(function(teddy) {
-    const article = document.createElement('article');
-    article.id = 'articleList';
-
-    const image = document.createElement('img');
-    image.id = 'teddyImage';
-    image.src = teddy.imageUrl;
 
     const div = document.createElement('div');
-    div.id = 'teddyDiv';
+    div.class = 'teddyDiv';
+
+    const cardDiv = document.createElement('div');
+    cardDiv.name = 'teddyCardDiv';
+    cardDiv.class = 'col-lg-4 col-sm-6 portfolio-item';
+
+    teddybear[counter].appendChild(cardDiv);
+    const cardDivFill = "<div class='card h-100'><div class='card-body'><a href='#'><img class='card-img-top' alt=''></a></div></div>";
+    cardDiv.innerHtml = cardDivFill;
+
+    const article = document.createElement('article');
+    article.class = 'articleList';
+
+    const image = document.createElement('img');
+    image.class= 'teddyImage';
+    image.src = teddy.imageUrl;
 
     const name = document.createElement('h3');
     name.textContent = teddy.name;
-    name.id = "teddyName";
+    name.class = "teddyName";
 
     const price = document.createElement('p');
     price.textContent = `Prix :  ${teddy.price} €`;
@@ -52,11 +62,11 @@ teddies().then((data) => {
     let teddyId = teddy._id;
 
     const link = document.createElement('a');
-    link.id = 'linkId';
-    link.href = 'produit.html?id=' + teddyId;
+    link.class = 'linkId';
+    link.href = 'product_page.html?id=' + teddyId;
     link.textContent = "Voir l'ourson";
-
-    teddybear[counter].appendChild(article);
+    
+    document.querySelector('.card-body').appendChild(article);
     article.appendChild(name);
     article.appendChild(image);
     article.appendChild(div);
@@ -65,3 +75,4 @@ teddies().then((data) => {
     counter += 1;
   });
 });
+

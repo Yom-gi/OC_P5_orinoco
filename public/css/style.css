@@ -35,7 +35,6 @@ header p{
 
 .basket{
   color: black;
-  font-size: 1.2em;
   font-weight: bold;
   background-color: #ffffff;   
   border-style: solid;   
@@ -50,7 +49,8 @@ header p{
 
 .basket_button {
  float: right;
- margin-top: 3%;
+ margin-top: 6%;
+ margin-left:10px;
 }
 .fa-lock{
   font-size: 1.2em;
